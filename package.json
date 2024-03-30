@@ -1,0 +1,19 @@
+{
+  "name": "tutoring-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "concurrently \"cd server && npm run watch\" \"cd client && npm dev\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run tw-build && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
