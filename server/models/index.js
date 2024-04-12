@@ -1,4 +1,4 @@
-import { Appointment } from "./Appointment";
-import { User } from "./User";
+import { Appointment } from "./Appointment.js";
+import { User } from "./User.js";
 
 export {Appointment, User};

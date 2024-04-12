@@ -7,7 +7,7 @@ export default function Navbar(){
                 <div className="container px-4 mx-auto h-full">
                     <div className="flex justify-between md:flex-column items-center h-full">
                         <a href="/"><div className="h-full flex justify-between items-center p-4">
-                            <img src='../../assets/Logo.png' width={80} height={80} alt="Logo"/>
+                            <img src='Logo.png' width={80} height={80} alt="Logo"/>
                             <div className="flex flex-col ml-4 text-text">
                                 <h1 className="text-4xl">Greenhouse Tutoring</h1>
                                 <h3 className="text-xl">An atmosphere for growth</h3>

@@ -1,6 +1,6 @@
-import { Schema, Model } from "mongoose";
+import mongoose from "mongoose";
 
-const appointmentSchema = new Schema({
+const appointmentSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
@@ -28,9 +28,9 @@ const appointmentSchema = new Schema({
 appointmentSchema.virtual('thisWeeksAppointments')
 .get(()=>{
     const now = new Date(Date.now());
-    
+
 });
 
-const Appointment = new Model('appointment', appointmentSchema);
+const Appointment = mongoose.model('appointment', appointmentSchema);
 
 export {appointmentSchema, Appointment};
